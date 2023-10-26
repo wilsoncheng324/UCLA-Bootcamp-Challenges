@@ -4,8 +4,9 @@ body {
     padding: 0px;
 }
 
-.header {
-    height: 120px;
+/* Header Section */
+.header, footer {
+    height: 150px;
     background: linear-gradient(300deg, #05bffd, #63383b, #3be7c2);
     background-size: 120% 240%;
     animation: gradient-animation 18s ease infinite;
@@ -14,33 +15,90 @@ body {
     padding: 0px;
 }
 
-.header li {
-    display: inline;
-    list-style: none;
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }}
+
+
+
+li:hover {
+    border-bottom: 2px solid aquamarine;    
+}
+
+li {
+    display: inline;  
     margin-right: 50px;   
     cursor: pointer; 
 }
 
-.header li:hover {
-    border-bottom: 2px solid aquamarine;    
-}
 
-.header ul {
+
+ul {
     font-size: 24px;
     text-align: end;
     color: aquamarine;
-     
+    list-style: none;
 }
 
 h1 {
     color: rgb(29, 6, 6);
-    background-color: ;
+    text-align: center;
+    width: 400px;
     margin: 0px;
     border: 0px;
     padding: 0px;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 #name {
+    font-weight: bolder;
+    margin-top: 50px;
+}
+/* Body */
+
+.container {
+    display: grid;
+    height: 130vh;
+    grid-template-columns: 1fr 4fr;
+
+}
+
+.container h2 {
+    border-right: 5px solid black;
+    padding-right: 10px;
+    font-size: 48px;
+    text-align: right;
+}
+
+.container p {
+    text-align: left;
+    margin-top: 50px;
+    padding-left: 50px;
     
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    color: white;
+}
+
+#footer-CM {
+    color: black;
+}
+
+a {
+    color: aquamarine;
+    text-decoration:none;
+}
+
