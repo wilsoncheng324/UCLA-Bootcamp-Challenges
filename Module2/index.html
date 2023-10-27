@@ -5,44 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wei Portfolio</title>
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <nav>          
         <div class="header">
             <h1><span id="name">Wei-Hsiang Cheng   </span>Portfolio</h1> 
-            <ul>
-                <li>About Me</li>
-                <li>Work</li>
-                <li>Resume</li>
-                <li>Contact Me</li>
+            <ul class="header-footer">
+                <li><a href="#aboutme-part">About Me</a></li>
+                <li><a href="#work-part">Work</a></li>
+                <li><a href="#contactme-part">Contact Me</a></li>
             </ul>                                  
         </div>        
     </nav>
     <section>
-        <img src="./assets/Section1.jpg" alt="Section1" height="175px" width="100%">
-    </section>
-    <section>
         <div class="container">
-            <h2>About Me</h2>
-            <p>
-                Efficient organizer and problem solver who readily adapts to change, works independently and exceeds expectations. Able to juggle multiple priorities and meet tight deadlines without compromising quality.
-                Authorized to work in the US for any employer.
-            </p>
+            <h2>About Me</h2>           
+            <div id="aboutme-part">
+                <div id="content-img">
+                    <img src="./assets/Wilson.jpg" alt="My picture" height="250px">
+                </div>
+                <div>
+                    <p>
+                    Efficient organizer and problem solver who readily adapts to change, works independently and exceeds expectations. Able to juggle multiple priorities and meet tight deadlines without compromising quality.
+                    Authorized to work in the US for any employer.
+                    </p>
+                </div>
+            </div>
             <h2>Work</h2>
-            <p>123</p>
-            <h2>Resume</h2>
-            <p>123</p>
+            <div id="work-part">
+                <div >
+                    <h3><a href="">My Portfolio</a></h3>            
+                    <div id="content-img"><img src="./My portfolio/assets/sample-page.png" alt="My Portfolio Page" height="150px"></div>
+                                    
+                </div>
+                <div>
+                    <h3><a href="">My Portfolio1</a></h3>
+                    <div id="content-img"><img src="./assets/Wilson.jpg" alt="My Portfolio Page" height="250px"></div>
+                </div>
+                
+               
+            </div>
+            <h2>Contact me</h2>
+            <div id="contactme-part">
+                <li><a href="###">Twitter</a></li>
+                <li><a href="wilsoncheng0324@gmail.com">Email</a></li>
+                <li><a href="https://github.com/wilsoncheng324">Github</a></li>
+            </div>
         </div>      
     </section>
     
     <footer id="footer">
-            <ul>
-                <li id="footer-CM">Contact Me:</li>
-                <li class="footer-li"><a href="###">Twitter</a></li>
-                <li class="footer-li"><a href="wilsoncheng0324@gmail.com">Email</a></li>
-                <li class="footer-li"><a href="https://github.com/wilsoncheng324">Github</a></li>
-            </ul>
+            <p>&copy by Wilson 💻</p>
     </footer>
 
 </body>
