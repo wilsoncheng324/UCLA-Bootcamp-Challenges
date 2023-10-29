@@ -154,11 +154,11 @@ footer {
 
 @media (max-width: 680px) {
     .container{
-        height: 220vh;
+        height: 250vh;
     }
 
     .header, footer {
-        height: 200px;
+        height: 100px;
         min-width: 600px;
     }
 
