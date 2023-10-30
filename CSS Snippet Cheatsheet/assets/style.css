@@ -1,0 +1,95 @@
+body{
+    display: flex;
+    font-family: 'Kanit', sans-serif;
+    margin: 100px;
+    background-color: rgb(49, 46, 46);
+    color: rgb(221, 117, 221);
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+}
+
+header p {
+    color: white;
+    margin-bottom: 40px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 25px;
+    max-width: 960px;
+    justify-content: center;
+}
+
+.snippets {   
+    border: 3px dashed white;
+    max-width: 320px;
+    height: 280px;
+    position: relative;
+    left: 10px;
+
+}
+
+.snippets p {
+    height: 54px;
+    margin-left: 10px;
+    position: relative;
+    top: -32px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 5%;
+    width: 90%;
+    border: 2px solid white;
+    position: relative;
+    top: -17px;
+    left: 13px;
+    background-color: rgb(32, 27, 27)
+}
+
+.purplebox{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: stretch;
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+    top: -40px;
+}
+
+pre {
+    color: white;
+    background-color: rgb(221, 117, 221);
+    margin: 10px;
+    height: inherit;
+    border-radius: 10px;
+}
+
+
+
+@media (min-width: 481px) and (max-width: 1200px){
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;   
+    }
+}
+    
+
+@media (max-width: 480px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+}

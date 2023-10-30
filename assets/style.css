@@ -112,13 +112,14 @@ h2, span {
 }
 
 h3 {
+    color: #097599;
     text-align: center;
 }
 
 #work-part div {
     gap: 10px;
     justify-content: center;
-    height: 250px;
+    height: inherit;
 }
 
 #content-img {
@@ -158,8 +159,11 @@ footer {
     }
 
     .header, footer {
-        height: 100px;
         min-width: 600px;
+    }
+
+    footer{
+        height: 100px;
     }
 
     .header-footer {
